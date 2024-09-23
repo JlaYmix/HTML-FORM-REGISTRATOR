@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/assets/img/1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 0px 5rem 0px;
+}
+
+.stick::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+
+.stick::after {
+    content: '';
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+
+.margin-bottom-article-h1 {
+    margin-bottom: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.article p {
+    margin-bottom: 15px;
+}
+
+.container,
+.input-box {
+    padding: 10px;
+}
+
+.input-box {
+    border-radius: 5px;
+}
+
+.width input {
+    width: 100%;
+}
+
+.container input {
+    padding: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: green;
+}
+
+.accept-form input {
+    margin: 0px 5px 0px 0px;
+    border-radius: 4px;
+    border: 5px;
+}
+
+.button {
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 0;
+    background: linear-gradient(#13c013, #228B22, #228B22);
+    color: #ffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register,
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+}
